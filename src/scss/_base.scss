@@ -1,0 +1,42 @@
+html {
+	font-size: 62.5%;
+	@include phone {
+		font-size: 50%;
+	}
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: var(--clr-text);
+	background-color: var(--clr-bg);
+
+	body {
+		font-size: 1.6rem;
+		
+
+		overflow: hidden;
+		
+		height: 100vh;
+		@supports (height: -webkit-fill-available) {
+			height: -webkit-fill-available;
+		}
+		@supports (height: 100svh) {
+			height: 100svh;
+		}
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+}

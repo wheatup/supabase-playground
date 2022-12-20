@@ -51,3 +51,7 @@ webServer: {
 
 3. Install `detect-port` using `npm i -D detect-port`, then create `e2e/utils.js` with the same content.
 4. Create `supabase/clear-db-data.sql` with the same content.
+
+## Routing
+
+1. Install `react-router-dom` using `npm i react-router-dom`.

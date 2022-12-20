@@ -1,0 +1,55 @@
+[data-comp='NavBar'] {
+	background-color: var(--clr-nav);
+
+	.content {
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		max-width: 128rem;
+		padding: 0 2rem;
+
+		.logo {
+			width: 3.2rem;
+			height: 3.2rem;
+			position: relative;
+			border-radius: 3.2rem;
+			overflow: hidden;
+			margin: .8rem 0;
+			margin-right: auto;
+			flex-shrink: 0;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.navs {
+			align-self: stretch;
+			position: relative;
+
+			a {
+				color: var(--clr-nav-link);
+				display: inline-flex;
+				align-items: center;
+				transition: color 0.3s;
+				transition-property: color, background-color;
+				height: 100%;
+				padding: 0 1rem;
+
+				i {
+					margin-right: 0.8rem;
+				}
+
+				&:hover {
+					color: var(--clr-nav-link-hover);
+					background-color: var(--clr-nav-link-hover-bg);
+				}
+
+				&.active {
+					background-color: var(--clr-nav-link-hover-bg);
+				}
+			}
+		}
+	}
+}

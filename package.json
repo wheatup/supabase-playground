@@ -19,6 +19,7 @@
 		"@vitejs/plugin-react": "^3.0.0",
 		"detect-port": "^1.5.1",
 		"playwright": "^1.29.0",
+		"sass": "^1.57.1",
 		"supabase": "^1.27.1",
 		"vite": "^4.0.0"
 	}
