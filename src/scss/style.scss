@@ -1,9 +1,14 @@
 @import './mixins';
 @import './config';
 @import './base';
+@import './layout';
+@import './common';
 
 @import './components/NavBar';
+@import './components/Login';
+@import './components/Dialog';
 
 @import './pages/AllPosts';
 @import './pages/PostView';
 @import './pages/Welcome';
+@import './pages/MessageBoard';

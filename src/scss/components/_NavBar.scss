@@ -1,12 +1,13 @@
 [data-comp='NavBar'] {
 	background-color: var(--clr-nav);
+	color: var(--clr-nav-text);
 
 	.content {
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
-		max-width: 128rem;
-		padding: 0 2rem;
+		max-width: var(--max-width);
+		width: calc(100% - 4rem);
 
 		.logo {
 			width: 3.2rem;
@@ -27,15 +28,20 @@
 		.navs {
 			align-self: stretch;
 			position: relative;
+			display: flex;
 
-			a {
-				color: var(--clr-nav-link);
+			> * {
 				display: inline-flex;
+				padding: 0 1rem;
 				align-items: center;
+				height: 100%;
+			}
+
+			> a {
+				color: var(--clr-nav-link);
 				transition: color 0.3s;
 				transition-property: color, background-color;
-				height: 100%;
-				padding: 0 1rem;
+				cursor: pointer;
 
 				i {
 					margin-right: 0.8rem;
@@ -50,6 +56,14 @@
 					background-color: var(--clr-nav-link-hover-bg);
 				}
 			}
+		}
+	}
+
+	.btn {
+		color: var(--clr-nav-link);
+
+		&:hover {
+			color: var(--clr-nav-link-hover);
 		}
 	}
 }

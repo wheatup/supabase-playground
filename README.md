@@ -54,4 +54,8 @@ webServer: {
 
 ## Routing
 
-1. Install `react-router-dom` using `npm i react-router-dom`.
+## Connect to Supabase
+
+1. Install auth with `npm i @supabase/auth-ui-react`.
+2. Install API connector `npm i @supabase/supabase-js`.
+3. Write Postgres schemas in `supabase/migrations/xxx_original_ddl.sql`.
